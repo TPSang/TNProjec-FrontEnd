@@ -1,0 +1,164 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-2" id="navbarSupportedContent">
+    <div class="container">
+        <!-- Add the button inside the body -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+
+
+        <!-- Left div with width 472px -->
+        <div class="navbar-brand" id="leftdiv">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo2.jpg" height="35" loading="lazy" />
+            </a>
+        </div>
+
+        <!-- Center div -->
+        <div class="mx-auto bg-white" id="centerdiv">
+            <div class="navbar-text d-flex align-items-center search">
+                <div class="search-icon ms-2">
+                </div>
+                <input class="search-input" placeholder="Tìm kiếm sách ....">
+            </div>
+        </div>
+
+        <!-- Right div -->
+        <div class="d-flex align-items-end" id="rightdiv">
+            <!-- Icon -->
+            <a class="text-reset me-3" href="#!cart">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="badge rounded-pill badge-notification bg-danger">1</span>
+            </a>
+
+            <!-- Notifications -->
+            <div class="dropdown">
+                <a class="text-reset me-3 dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink"
+                    role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-bell"></i>
+                    <span class="badge rounded-pill badge-notification bg-danger">1</span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                    <li>
+                        <a class="dropdown-item" href="#">Some news</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">Another news</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Avatar -->
+            <div class="dropdown">
+                <a class="dropdown-toggle d-flex align-items-center hidden-arrow" href="#"
+                    id="navbarDropdownMenuAvatar" role="button" data-mdb-toggle="dropdown"
+                    aria-expanded="false">
+                    <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle"
+                        height="25" alt="Black and White Portrait of a Man" loading="lazy" />
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
+                    <li>
+                        <a class="dropdown-item" href="#">My profile</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">Settings</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+</nav>
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    
+    <div class="offcanvas-body">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">
+            <a class="d-flex align-items-center ps-4 pt-3" href="#">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img (31).webp" class="rounded-circle"
+                    height="85" alt="Portrait of a Woman" loading="lazy" />
+            </a>                 
+        </h5>
+        <h5 class="pb-3 text-black ms-4 pt-3" style="font-size: 16px;">Tran Duc Trien (FPL HCM)</h5>
+        <ul class="nav flex-column border-bottom pb-3 pt-3">
+            <li class="d-grid gap-2">
+                <a href="#" class="btn btn-light btn-lg text-start" style="text-transform: capitalize;">
+                    <i class="fas fa-user" style="margin-right: 10px;"></i>
+                    <span z>Trang cá nhân</span>
+                </a>
+            </li>
+            <li class="d-grid gap-2">
+                <a href="#!product" class="btn btn-light btn-lg text-start "
+                    style="text-transform: capitalize;">
+                    <i class="fas fa-cart-shopping" style="margin-right: 10px;"></i>
+                    <span>Giỏ hàng của tôi</span>
+                </a>
+            </li>
+
+        </ul>
+        <ul class="nav flex-column pt-3">
+            <li class="d-grid gap-2">
+                <a href="#" class="btn btn-light btn-lg text-start " style="text-transform: capitalize;">
+                    <i class="fas fa-house" style="margin-right: 10px;"></i>
+                    <span>Trang chủ</span>
+                </a>
+            </li>
+            <li class="d-grid gap-2">
+                <a href="#" class="btn btn-light btn-lg text-start " style="text-transform: capitalize;">
+                    <i class="fas fa-book-open" style="margin-right: 10px;"></i>
+                    <span>Sách 1</span>
+                </a>
+            </li>
+            <li class="d-grid gap-2">
+                <a href="#" class="btn btn-light btn-lg text-start " style="text-transform: capitalize;">
+                    <i class="fas fa-laptop" style="margin-right: 10px;"></i>
+                    <span>Sách 2</span>
+                </a>
+            </li>
+            <li class="d-grid gap-2">
+                <a href="#" class="btn btn-light btn-lg text-start " style="text-transform: capitalize;">
+                    <i class="fab fa-blogger-b" style="margin-right: 10px;"></i>
+                    <span>Blog</span>
+                </a>
+            </li>
+
+        </ul>
+        <ul class="nav flex-column pt-3">
+            <li class="d-grid gap-2">
+                <a href="#" class="btn btn-light btn-lg text-start " style="text-transform: capitalize;">
+                    <i class="fas fa-bookmark" style="margin-right: 10px;"></i>
+                    <span>Bài viết đã lưu</span>
+                </a>
+            </li>
+
+        </ul>
+        <ul class="nav flex-column pt-3">
+            <li class="d-grid gap-2">
+                <a href="#" class="btn btn-light btn-lg text-start " style="text-transform: capitalize;">
+                    <i class="fas fa-circle-info" style="margin-right: 10px;"></i>
+                    <span>Giới thiệu</span>
+                </a>
+            </li>
+            <li class="d-grid gap-2">
+                <a href="#" class="btn btn-light btn-lg text-start " style="text-transform: capitalize;">
+                    <i class="fas fa-gear" style="margin-right: 10px;"></i>
+                    <span>Cài đặt</span>
+                </a>
+            </li>
+
+        </ul>
+        <ul class="nav flex-column pt-3">
+            <li class="d-grid gap-2">
+                <a href="#" class="btn btn-light btn-lg text-start " style="text-transform: capitalize;">
+                    <i class="fas fa-right-from-bracket" style="margin-right: 10px;"></i>
+                    <span>Đăng xuất</span>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+</div>

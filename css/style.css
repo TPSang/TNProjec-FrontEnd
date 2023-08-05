@@ -1,0 +1,197 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#centerdiv,
+#leftdiv {
+    display: block;
+    width: 150px;
+}
+
+#slidebar {
+    display: block;
+}
+
+#rightdiv {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+
+@media (max-width: 767px) {
+    body{
+       padding: auto;
+    }
+    #centerdiv,
+    #leftdiv,
+    #rightdiv {
+        display: none;
+    }
+
+    #slidebar {
+        display: none;
+    }
+    #content.container {
+        max-width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+}
+
+
+#navbarSupportedContent {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.search {
+    border: 2px solid #e8e8e8;
+    border-radius: 20px;
+    height: 40px;
+    transition: border-color 0.2s ease-in-out;
+    width: 420px;
+}
+
+.search-icon {
+    background-color: #fff;
+    background-image: url("https://fullstack.edu.vn/static/media/search.9bd3926522ea0937310c.svg");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 18px;
+    height: 36px;
+    opacity: 0.7;
+    width: 30px;
+}
+
+.search-input {
+    width: 362px;
+    border: none;
+    outline: none;
+    padding: 0 4px;
+}
+
+/* slide bar */
+.content {
+    margin-top: 60px;
+}
+
+.content-body,
+.content-body a {
+    font-size: 14px;
+    color: #000;
+}
+
+#slidebar {
+    width: 150px;
+}
+
+.slidebar_itemBtn {
+    align-items: center;
+    border-radius: 16px;
+    color: #404040;
+    display: flex;
+    flex-direction: column;
+    height: 72px;
+    justify-content: center;
+    margin-top: 4px;
+    width: 72px;
+}
+
+.slidebar_itemBtn span {
+    font-size: 10px;
+    font-weight: 600;
+    margin-top: 6px;
+}
+
+.slidebar_itemBtn i {
+    width: auto;
+    height: 20px;
+}
+
+/* Footer */
+#footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #181821;
+}
+
+#footer .footer-heading {
+    font-size: 13px;
+    color: #fff;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+#footer .footer-heading .logo {
+    letter-spacing: none;
+    font-size: 16px;
+    color: #fff;
+}
+
+#footer .text-hihi {
+    font-size: 14px;
+}
+
+#footer .subscribe-form .form-group input {
+    background: rgba(255, 255, 255, 0.05) !important;
+    color: rgba(255, 255, 255, 0.3) !important;
+}
+
+#footer .list-unstyled li a {
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+#footer .copyright {
+    font-size: 13px;
+}
+
+.ftco-footer-social li {
+    list-style: none;
+    display: inline-block;
+}
+
+/* product info */
+.product-title {
+    font-size: 18px;
+    color: #404040;
+}
+
+.product-body,
+.product-body-info {
+    font-size: 14px;
+    color: #22242d;
+}
+
+.rating {
+    font-size: 15px;
+    color: #ccc;
+    cursor: pointer;
+
+}
+
+.rating .rating-input {
+    display: inline-block;
+    width: 30px;
+
+}
+
+.rating .rating-input.filled {
+    color: #FFD700;
+    /* Màu vàng cho các ngôi sao đã chọn */
+}
+
+
+.progress-label {
+    font-size: 13px;
+    margin-top: 5px;
+    text-align: right;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js"></script>
+</head>
+<body>
+    <div ng-controller="MainController" ng-style="{ 'background-color': backgroundColor, 'color': fontColor }">
+        <h1>Change Background Color</h1>
+        <button ng-click="changeBackgroundColor('white')">Red</button>
+        <button ng-click="changeBackgroundColor('black')">Black</button>
+    </div>
+
+    <script>
+        angular.module('myApp', [])
+          .controller('MainController', function($scope) {
+            // Initialize background color and font color
+            $scope.backgroundColor = 'white';
+            $scope.fontColor = 'black';
+
+            // Function to change the background color and font color
+            $scope.changeBackgroundColor = function(color) {
+              $scope.backgroundColor = color;
+              // Set font color to white if background color is black, otherwise set it to black
+              $scope.fontColor = color === 'black' ? 'white' : 'black';
+            };
+          });
+    </script>
+</body>
+</html>

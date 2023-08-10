@@ -1,5 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #f8f6f0;
 }
 
 #centerdiv,
@@ -196,3 +197,26 @@ body {
     margin-top: 5px;
     text-align: right;
 }
+
+/* Carousel sản phẩm - Chia 5 sản phẩm một hàng và hover */
+.product {
+    flex: 0 0 calc(20% - 10px);
+    /* Chia đều 5 cột với khoảng cách giữa các cột là 10px */
+    max-width: calc(20% - 10px);
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.product .product-item .card-body:hover {
+    border: 1px solid rgb(149, 149, 149);
+    /*  Thêm đường viền khi hover */
+    /* box-shadow:2px 2px 0px rgba(0, 0, 0, 0.2);Đổ bóng khi hover */
+}
+
+/* set tên sản phẩm dài quá sẽ ẩn bớt */
+.product-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 250px; /* Đặt chiều rộng tối đa cho tên sản phẩm */
+  }

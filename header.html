@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-2" id="navbarSupportedContent">
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-2" id="navbarSupportedContent" style="padding: 0;">
     <div class="container">
         <!-- Add the button inside the body -->
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
@@ -10,34 +10,223 @@
         <!-- Left div with width 472px -->
         <div class="navbar-brand" id="leftdiv">
             <a class="navbar-brand" href="#">
-                <img src="images/logo2.jpg" height="35" loading="lazy" />
+                <img src="https://cdn0.fahasa.com/media/quiz-game-T7/Avatar_IconApp_SN47_logoSN47_1.png" alt=""
+                    style="width:220px;vertical-align: middle;" height="auto">
             </a>
+
         </div>
 
         <!-- Center div -->
-        <div class="mx-auto bg-white" id="centerdiv">
-            <div class="navbar-text d-flex align-items-center search">
-                <div class="search-icon ms-2">
+
+        <div class="collapse navbar-collapse" id="centerdiv">
+            <div class="d-flex">
+                <div class="nav-item nav-link me-2 dropdown" id="dropdown-category">
+                    <a class="" type="button" href="#" role="img" data-bs-toggle="dropdown" aria-expanded="false"
+                        style="color: #000;" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <img src="https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ico_menu.svg" alt="">
+                        <span style="color: gray;"><i class="fas fa-caret-down"></i></span>
+                    </a>
+                    <div id="drop-menu-category" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <div class="row w-100">
+                            <div class="col-3">
+                                <!-- Tab navs -->
+                                <div class="nav flex-column nav-tabs text-center" id="v-tabs-tab" role="tablist"
+                                    aria-orientation="vertical">
+                                    <a class="nav-link active" id="v-tabs-home-tab" data-mdb-toggle="tab"
+                                        href="#v-tabs-home" role="tab" aria-controls="v-tabs-home"
+                                        aria-selected="true">Home</a>
+                                    <a class="nav-link" id="v-tabs-profile-tab" data-mdb-toggle="tab"
+                                        href="#v-tabs-profile" role="tab" aria-controls="v-tabs-profile"
+                                        aria-selected="false">Profile</a>
+                                    <a class="nav-link" id="v-tabs-messages-tab" data-mdb-toggle="tab"
+                                        href="#v-tabs-messages" role="tab" aria-controls="v-tabs-messages"
+                                        aria-selected="false">Messages</a>
+                                </div>
+                                <!-- Tab navs -->
+                            </div>
+
+                            <div class="col-9">
+                                <!-- Tab content -->
+                                <div class="tab-content" id="v-tabs-tabContent">
+                                    <div class="tab-pane fade show active" id="v-tabs-home" role="tabpanel"
+                                        aria-labelledby="v-tabs-home-tab">
+                                        Home content
+                                    </div>
+                                    <div class="tab-pane fade" id="v-tabs-profile" role="tabpanel"
+                                        aria-labelledby="v-tabs-profile-tab">
+                                        Profile content
+                                    </div>
+                                    <div class="tab-pane fade" id="v-tabs-messages" role="tabpanel"
+                                        aria-labelledby="v-tabs-messages-tab">
+                                        Messages content
+                                    </div>
+                                </div>
+                                <!-- Tab content -->
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <input class="search-input" placeholder="Tìm kiếm sách ....">
+                <div class="nav-item nav-link d-flex align-items-center search dropdown">
+                    <input class="search-input ms-3" placeholder="Tìm kiếm sách ...." id="dropdownMenuButton"
+                        data-mdb-toggle="dropdown" aria-expanded="false">
+                    <div class="search-bg-icon me-1 d-flex">
+                        <span class="search-icon"></span>
+                    </div>
+                    <div id="drop-menu-search" class="dropdown-menu mt-2 " aria-labelledby="dropdownMenuButton">
+                        <div class="p-4 pb-0 bg-white">
+                            <div class="my-div border-2"
+                                style="background-color: rgb(255, 242, 204); width: 549px; padding: 8px; border-radius: 10px;">
+                                <a href="#" class="d-flex align-items-center pe-2 ps-2"
+                                    style=" color: rgb(240, 45, 27); font-size: 13px;">
+                                    <span class="mr-2">Giảm sốc - Số lượng có hạn</span>
+                                    <img class="img-fluid"
+                                        src="https://cdn0.fahasa.com/media/wysiwyg/Duy-VHDT/Artboard_11.3.jpg" style="max-width: 100%;
+                                        height: auto;
+                                        margin-left: auto;">
+                                </a>
+                            </div>
+
+
+                        </div>
+                        <div class="border-bottom p-4">
+                            <div class="pt-2 row">
+                                <div class="col-md-6">
+                                    <span><i class="fas fa-arrow-trend-up"></i></span>
+                                    <span>Từ khóa hot</span>
+                                </div>
+                                <div class="col-md-6 d-flex justify-content-end">
+                                    <span><i class="fas fa-arrows-rotate"></i></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4 product-card p-2">
+                                    <a class="d-flex" href=""><img
+                                            src="https://cdn0.fahasa.com/media/catalog/product/t/d/tdcsvnsh.jpg"
+                                            height="48px">
+                                        <div class="text-black" style="font-size: 13px;">Tâm Lý Giảm Đến 50%</div>
+                                    </a>
+                                </div>
+                                <div class="col-4 product-card p-2">
+                                    <a class="d-flex" href=""><img
+                                            src="https://cdn0.fahasa.com/media/catalog/product/t/h/th_ng-b_o-ph_t-h_nh-b_-b_i-nh_t-k_-tarot-tb2022m_t-ngo_i-h_p-_ng.jpg"
+                                            height="48px">
+                                        <div class="text-black" style="font-size: 13px;">Cùng Tarot Khám Phá Cuộc Sống
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-4 product-card p-2">
+                                    <a class="d-flex" href=""><img
+                                            src="https://cdn0.fahasa.com/media/catalog/product/t/i/tiktok_outline-01.jpg"
+                                            height="48px">
+                                        <div class="text-black" style="font-size: 13px;">Sách Kinh Tế Bán Chạy</div>
+                                    </a>
+                                </div>
+                                <div class="col-4 product-card p-2">
+                                    <a class="d-flex" href=""><img
+                                            src="https://cdn0.fahasa.com/media/catalog/product/b/i/bia1_muonkiepnhansinh3-01.jpg"
+                                            height="48px">
+                                        <div class="text-black" style="font-size: 13px;">Muôn Kiếp Nhân Sinh - Tập 3
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-4 product-card p-2">
+                                    <a class="d-flex" href=""><img
+                                            src="https://cdn0.fahasa.com/media/catalog/product/c/o/combo-3300000027449-1901011410903.jpg"
+                                            height="48px">
+                                        <div class="text-black" style="font-size: 13px;">Trở Lại Trường Học</div>
+                                    </a>
+                                </div>
+                                <div class="col-4 product-card p-2">
+                                    <a class="d-flex" href=""><img
+                                            src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_217480.jpg"
+                                            height="48px">
+                                        <div class="text-black" style="font-size: 13px;">NHÃ NAM GIẢM SỐC</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d p-4 pb-4 pt-2">
+                            <div class="pt-2 row">
+                                <div class="col-md-6">
+                                    <img src="https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ico_menu.svg" width="20px" srcset="">
+                                    <span>Danh mục nổi bật</span>
+                                </div>
+                                <div class="col-md-6 d-flex justify-content-end">
+                                    <span><i class="fas fa-arrows-rotate"></i></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3 product-card p-2 text-center">
+                                    <a class="" href=""><img
+                                            src="https://cdn0.fahasa.com/media/catalog/product/n/g/ng_y_m_a_l_nh_i_m_nh_h_n_c_manga_b_a_1.png"
+                                            width="56px">
+                                        <div class="text-black" style="font-size: 13px;">Tâm Lý Giảm Đến 50%</div>
+                                    </a>
+                                </div>
+                                <div class="col-3 product-card p-2 text-center">
+                                    <a class="" href=""><img
+                                            src="https://cdn0.fahasa.com/media/catalog/product/n/x/nxbtre_full_17002023_100019.jpg"
+                                            width="56px">
+                                        <div class="text-black" style="font-size: 13px;">Cùng Tarot Khám Phá Cuộc Sống
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-3 product-card p-2 text-center">
+                                    <a class="" href=""><img
+                                            src="https://cdn0.fahasa.com/media/catalog/product/b/_/b_a-tr_cph_c-h_a-ch_n-dung-k_-ph_m-t_i.jpg"
+                                            width="56px">
+                                        <div class="text-black" style="font-size: 13px;">Sách Kinh Tế Bán Chạy</div>
+                                    </a>
+                                </div>
+                                <div class="col-3 product-card p-2 text-center">
+                                    <a class="" href=""><img
+                                            src="https://cdn0.fahasa.com/media/flashmagazine/images/page_images/giao_trinh_chuan_hsk_1_tai_ban_2022/2022_06_25_10_11_36_1-390x510.jpg"
+                                            width="56px">
+                                        <div class="text-black" style="font-size: 13px;">Sách Kinh Tế Bán Chạy</div>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+
         </div>
 
         <!-- Right div -->
-        <div class="d-flex align-items-end" id="rightdiv">
+        <div class="d-flex align-items-center" id="rightdiv">
             <!-- Icon -->
-            <a class="text-reset me-3" href="#!cart">
-                <i class="fas fa-shopping-cart"></i>
-                <span class="badge rounded-pill badge-notification bg-danger">1</span>
-            </a>
+            <div class="dropdown px-2 ">
+                <a class="text-reset dropdown-toggle hidden-arrow " href="#" id="navbarDropdownMenuLink" role="button"
+                    data-mdb-toggle="dropdown" aria-expanded="false">
+                    <div class="text-center top-menu-icon">
+                        <i class="far fa-bell"></i>
+
+                    </div>
+                    <div>
+                        <div class="top-menu-label">Thông báo</div>
+                    </div>
+
+
+                </a>
+            </div>
+
 
             <!-- Notifications -->
-            <div class="dropdown">
-                <a class="text-reset me-3 dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink"
-                    role="button" data-mdb-toggle="dropdown" aria-expanded="false">
-                    <i class="fas fa-bell"></i>
-                    <span class="badge rounded-pill badge-notification bg-danger">1</span>
+            <div id="nav-notifications" class="dropdown px-2 ">
+                <a class="text-reset" href="#!cart">
+                    <div class="text-center top-menu-icon">
+                        <i class="fas fa-shopping-cart"></i>
+
+                    </div>
+                    <div>
+                        <div class="top-menu-label">Giỏ hàng</div>
+                    </div>
+
                 </a>
+
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
                     <li>
                         <a class="dropdown-item" href="#">Some news</a>
@@ -51,37 +240,66 @@
                 </ul>
             </div>
             <!-- Avatar -->
-            <div class="dropdown">
-                <a class="dropdown-toggle d-flex align-items-center hidden-arrow" href="#"
-                    id="navbarDropdownMenuAvatar" role="button" data-mdb-toggle="dropdown"
-                    aria-expanded="false">
-                    <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle"
-                        height="25" alt="Black and White Portrait of a Man" loading="lazy" />
+            <div class="dropdown px-2">
+
+                <a class="dropdown-toggle hidden-arrow" href="#"  role="button"
+                    data-mdb-toggle="dropdown" aria-expanded="false">
+                    <div class="text-center top-menu-icon">
+                        <i class="far fa-user"></i>
+
+                    </div>
+                    <div>
+                        <div class="top-menu-label">Tài khoản</div>
+                    </div>
+
                 </a>
-                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
+                <ul class="dropdown-menu dropdown-menu-end p-2">
                     <li>
-                        <a class="dropdown-item" href="#">My profile</a>
+                        <a class="dropdown-item" href="#">Đăng Nhập</a>
                     </li>
                     <li>
-                        <a class="dropdown-item" href="#">Settings</a>
+                        <a class="dropdown-item" href="#">Đăng Ký</a>
                     </li>
                     <li>
-                        <a class="dropdown-item" href="#">Logout</a>
+                        <a class="dropdown-item" href="#">Đăng Nhập Bằng FaceBook</a>
                     </li>
                 </ul>
+            </div>
+            <div id="nav-lang" class="dropdown px-2 border p-2 pt-2 pb-2" style="border-radius: 10px;">
+                <a class="" type="button" href="#" role="img" data-bs-toggle="dropdown" aria-expanded="false"
+                    style="color: #000;">
+                    <img src="https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/default.svg" alt="">
+                    <span style="color: gray;"><i class="fas fa-caret-down"></i></span>
+                </a>
+                <div class="dropdown-menu custom-dropdown-menu dropdown-menu-end p-2" >
+                    <div class="text-center">
+                        <a class="dropdown-item active" href="#">
+                            <img src="https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/default.svg" width="32px" alt="" srcset="">
+                            <span>VN</span>
+                        </a>
+                    </div>
+                    <div class="text-center">
+                        <a class="dropdown-item" href="#">
+                            <img src="https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/store/english.svg" width="32px" alt="" srcset="">
+                            <span>EN</span>
+                        </a>
+                    </div>
+                    
+                </div>
             </div>
         </div>
     </div>
     </div>
 </nav>
+<!-- offcanvas -->
 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-    
+
     <div class="offcanvas-body">
         <h5 class="offcanvas-title" id="offcanvasRightLabel">
             <a class="d-flex align-items-center ps-4 pt-3" href="#">
-                <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img (31).webp" class="rounded-circle"
-                    height="85" alt="Portrait of a Woman" loading="lazy" />
-            </a>                 
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img (31).webp" class="rounded-circle" height="85"
+                    alt="Portrait of a Woman" loading="lazy" />
+            </a>
         </h5>
         <h5 class="pb-3 text-black ms-4 pt-3" style="font-size: 16px;">Tran Duc Trien (FPL HCM)</h5>
         <ul class="nav flex-column border-bottom pb-3 pt-3">
@@ -92,8 +310,7 @@
                 </a>
             </li>
             <li class="d-grid gap-2">
-                <a href="#!product" class="btn btn-light btn-lg text-start "
-                    style="text-transform: capitalize;">
+                <a href="#!product" class="btn btn-light btn-lg text-start " style="text-transform: capitalize;">
                     <i class="fas fa-cart-shopping" style="margin-right: 10px;"></i>
                     <span>Giỏ hàng của tôi</span>
                 </a>

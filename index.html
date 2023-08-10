@@ -25,7 +25,8 @@
     <title>Document</title>
 </head>
 
-<body ng-app="myapp" >
+<body ng-app="myapp">
+    <!-- Header -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-2" id="navbarSupportedContent">
             <div class="container">
@@ -104,13 +105,13 @@
             </div>
         </nav>
         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-            
+
             <div class="offcanvas-body">
                 <h5 class="offcanvas-title" id="offcanvasRightLabel">
                     <a class="d-flex align-items-center ps-4 pt-3" href="#">
                         <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img (31).webp" class="rounded-circle"
                             height="85" alt="Portrait of a Woman" loading="lazy" />
-                    </a>                 
+                    </a>
                 </h5>
                 <h5 class="pb-3 text-black ms-4 pt-3" style="font-size: 16px;">Tran Duc Trien (FPL HCM)</h5>
                 <ul class="nav flex-column border-bottom pb-3 pt-3">
@@ -192,50 +193,201 @@
             </div>
         </div>
     </header>
-    <div class="row content">
-        <!-- slidebar -->
-        <div id="slidebar" class="col-md-2">
-            <ul class="nav flex-column p-4 ">
-                <li class="mb-2">
-                    <a href="#" class="slidebar_itemBtn">
-                        <i class="fas fa-house"></i>
-                        <span>HOME</span>
-                    </a>
-                </li>
-                <li class="mb-2">
-                    <a href="#!product" class="slidebar_itemBtn">
-                        <i class="fab fa-product-hunt"></i>
-                        <span>Product</span>
-                    </a>
-                </li>
-                <li class="mb-2">
-                    <a href="#" class="slidebar_itemBtn">
-                        <i class="fab fa-blogger-b"></i>
-                        <span>Blog</span>
-                    </a>
-                </li>
-                <li class="mb-2">
-                    <a href="#" class="slidebar_itemBtn">
-                        <i class="fas fa-address-book"></i>
-                        <span>Contact Us</span>
-                    </a>
-                </li>
+    <!-- Header end -->
 
-            </ul>
+
+    <div class="container">
+        <div class="row mt-3">
+            <!-- Carosel -->
+            <div id="carouselExampleIndicators" class="carousel slide col-md-8" data-bs-ride="carousel"
+                data-bs-interval="1000">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner rounded-3">
+                    <div class="carousel-item active">
+                        <a href="#"><img
+                                src="https://cdn0.fahasa.com/media/magentothem/banner7/Fahasa_Sinhnhat_Co_Logo_Slide_840x320.jpg"
+                                class="d-block w-100" alt="..."></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="#"><img
+                                src="https://cdn0.fahasa.com/media/magentothem/banner7/NCCDiamondT823_NhaNam_BannerSlide_840x320.jpg"
+                                class="d-block w-100" alt="..."></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="#"><img
+                                src="https://cdn0.fahasa.com/media/magentothem/banner7/MCbooks_PlatinumT723_Banner_Slide_840x320.jpg"
+                                class="d-block w-100" alt="..."></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="#"><img
+                                src="https://cdn0.fahasa.com/media/magentothem/banner7/Deli_PlatinumT723_Slide_840x320.jpg"
+                                class="d-block w-100" alt="..."></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="#"><img
+                                src="https://cdn0.fahasa.com/media/magentothem/banner7/NCCGoldT823_HuyHoang_BannerSlide_840x320.jpg"
+                                class="d-block w-100" alt="..."></a>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <!-- Images section -->
+
+            <div class="col-md-4 d-flex d-none d-md-block">
+
+                <a href="#"><img class="img-fluid rounded-3 mb-2 mx-4"
+                        src="https://cdn0.fahasa.com/media/wysiwyg/Thang-08-2023/VNPayT8_392x156.jpg" alt=""></a>
+
+                <a href="#"><img class="img-fluid rounded-3 mt-2 mx-4"
+                        src="https://cdn0.fahasa.com/media/wysiwyg/Thang-08-2023/ZaloPayT8_392x156.jpg" alt=""></a>
+            </div>
         </div>
-        <!-- content -->
-        <div class="col-10 p-5" id="content">
-            <div ng-view></div>
-
+        <div class="row py-4">
+            <!-- Images blocks here -->
+            <div class="col-sm-3 col-md-3 d-none d-md-block col-xs-3 block-item no-padding hidden-xs"><a href="#"><img
+                        class="img-fluid"
+                        src="https://cdn0.fahasa.com/media/wysiwyg/Thang-08-2023/PlatinumT723_ThienLong_SmallBanner_310x210.png"
+                        alt=""></a></div>
+            <div class="col-sm-3 col-md-3 d-none d-md-block col-xs-3 block-item no-padding hidden-xs"><a href="#"><img
+                        class="img-fluid"
+                        src="https://cdn0.fahasa.com/media/wysiwyg/Thang-08-2023/T8_Backtoschool_trangtong_mainbanner_T8_Smallbanner_310x210_1.png"
+                        alt=""></a></div>
+            <div class="col-sm-3 col-md-3 d-none d-md-block col-xs-3 block-item no-padding hidden-xs"><a href="#"><img
+                        class="img-fluid"
+                        src="https://cdn0.fahasa.com/media/wysiwyg/Thang-08-2023/TrangBaLoT823_Banner_SmallBanner-05.png"
+                        alt=""></a></div>
+            <div class="col-sm-3 col-md-3 d-none d-md-block col-xs-3 block-item no-padding hidden-xs"><a href="#"><img
+                        class="img-fluid"
+                        src="https://cdn0.fahasa.com/media/wysiwyg/Thang-08-2023/BinhTayT8_SmallBanner_310x210.png"
+                        alt=""></a></div>
         </div>
 
+        <!-- Card header -->
+        <div class="card rounded-0">
+            <div class="card-body">
+                <div class="row  ">
+                    <div class="col-xs-2 text-center mb-3">
+                        <a class="text-decoration-none" href="#">
+                            <img style="max-width: 100%; height: auto;"
+                                src="https://cdn0.fahasa.com/media/wysiwyg/Thang-08-2023/IconSieuSaleSinhNhat_120x120.png"
+                                class="img-fluid rounded-3 bg-light" alt="...">
+                            <p class="text-black">Siêu Sinh Nhật
+                                Siêu Wòaaa</p>
+                        </a>
+                    </div>
 
+                    <div class="col-xs-2 text-center mb-3 ">
+                        <a class="text-decoration-none" href="#">
+                            <img style="max-width: 100%; height: auto;;"
+                                src="https://cdn0.fahasa.com/media/wysiwyg/Thang-08-2023/IconGameT8.png"
+                                class="img-fluid rounded-3 bg-light" alt="...">
+                            <p class="text-black">Siêu Game
+                                Siêu Dễ</p>
+                        </a>
+                    </div>
+
+                    <div class="col-xs-2 text-center mb-3 ">
+                        <a class="text-decoration-none" href="#">
+                            <img style="max-width: 100%; height: auto;;"
+                                src="https://cdn0.fahasa.com/media/wysiwyg/icon-menu/Icon_FlashSale_Thuong_120x120.png"
+                                class="img-fluid  rounded-3 bg-light" alt="...">
+                            <p class="text-black">Flash Sale</p>
+                        </a>
+                    </div>
+
+                    <div class="col-xs-2 text-center mb-3 ">
+                        <a class="text-decoration-none" href="#">
+                            <img style="max-width: 100%; height: auto;;"
+                                src="https://cdn0.fahasa.com/media/wysiwyg/icon-menu/Icon_MaGiamGia_8px_1.png"
+                                class="img-fluid  rounded-3 bg-light" alt="...">
+                            <p class="text-black">Mã Giảm Giá</p>
+                        </a>
+                    </div>
+
+                    <div class="col-xs-2 text-center mb-3 ">
+                        <a class="text-decoration-none" href="#">
+                            <img style="max-width: 100%; height: auto;;"
+                                src="https://cdn0.fahasa.com/media/wysiwyg/Thang-08-2023/Icon_Galaxy_120x120.png.png"
+                                class="img-fluid  rounded-3 bg-light" alt="...">
+                            <p class="text-black">Galaxy Education</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-2 text-center mb-3 ">
+                        <a class="text-decoration-none" href="#">
+                            <img style="max-width: 100%; height: auto;;"
+                                src="https://cdn0.fahasa.com/media/wysiwyg/Thang-07-2023/Icon_B2S_1.png"
+                                class="img-fluid  rounded-3 bg-light" alt="...">
+                            <p class="text-black">Trở Lại Trường Học</p>
+                        </a>
+                    </div>
+
+                    <div class="col-xs-2 text-center mb-3 ">
+                        <a class="text-decoration-none" href="#">
+                            <img style="max-width: 100%; height: auto;;"
+                                src="https://cdn0.fahasa.com/media/wysiwyg/icon-menu/Icon_BookTok_120x120.png"
+                                class="img-fluid  rounded-3 bg-light" alt="...">
+                            <p class="text-black">Tiktok Trending</p>
+                        </a>
+                    </div>
+
+                    <div class="col-xs-2 text-center mb-3 ">
+                        <a class="text-decoration-none" href="#">
+                            <img style="max-width: 100%; height: auto;;"
+                                src="https://cdn0.fahasa.com/media/wysiwyg/icon-menu/Icon_SanPhamMoi_8px_1.png"
+                                class="img-fluid  rounded-3 bg-light" alt="...">
+                            <p class="text-black">Sản Phẩm Mới</p>
+                        </a>
+                    </div>
+
+                    <div class="col-xs-2 text-center mb-3 ">
+                        <a class="text-decoration-none" href="#">
+                            <img style="max-width: 100%; height: auto;;"
+                                src="https://cdn0.fahasa.com/media/wysiwyg/icon-menu/Manga_Week_Hot.png"
+                                class="img-fluid  rounded-3 bg-light" alt="...">
+                            <p class="text-black">Manga</p>
+                        </a>
+                    </div>
+
+                    <div class="col-xs-2 text-center mb-3 ">
+                        <a class="text-decoration-none" href="#">
+                            <img style="max-width: 100%; height: auto;;"
+                                src="https://cdn0.fahasa.com/media/wysiwyg/icon-menu/Icon_PhienChoCu_8px_1.png"
+                                class="img-fluid  rounded-3 bg-light" alt="...">
+                            <p class="text-black">Phiên Chợ Sách cũ</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
+    <!-- Footer -->
     <footer id="footer" class=" pt-5">
 
         <div class="container">
-            <div class="row text-white">
+            <div class="row text-white ps-4">
                 <div class="col-md-4 ">
                     <h2 class="footer-heading">
                         <a href="#" class="logo">
@@ -248,7 +400,7 @@
                 </div>
                 <div class="col-md-2 ">
                     <h2 class="footer-heading">MAY WE HELP YOU?</h2>
-                    <ul class="list-unstyled ">
+                    <ul class="list-unstyled">
                         <li>
                             <a href="#" class="py-1 d-block text-white">Contact Us</a>
                         </li>
@@ -333,6 +485,8 @@
             </div>
         </div>
     </footer>
+    <!-- Footer end -->
+
 
     <script src="js/app.js"></script>
 </body>

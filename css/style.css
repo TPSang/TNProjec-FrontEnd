@@ -39,12 +39,13 @@ body {
         margin-right: auto;
         margin-left: auto;
       }
-
+      #footer {
+        padding-right: 50px;
+      }
 }
 
 
 #navbarSupportedContent {
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -78,7 +79,7 @@ body {
 
 /* slide bar */
 .content {
-    margin-top: 60px;
+    margin-top: 75px;
 }
 
 .content-body,

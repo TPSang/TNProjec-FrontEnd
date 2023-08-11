@@ -15,7 +15,6 @@ app.config(function ($routeProvider) {
         .when("/feedback", {
             templateUrl: "html/feedback.html"
         })
-        
         .otherwise({
             redirectTo: "/home"
         });
